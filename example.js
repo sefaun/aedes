@@ -40,5 +40,6 @@ aedes.on('subscribe', function (subscriptions, client) {
 })
 
 aedes.on('client', function (client) {
+  client.clientAuthentication = true
   console.log('new client', client.id)
 })
